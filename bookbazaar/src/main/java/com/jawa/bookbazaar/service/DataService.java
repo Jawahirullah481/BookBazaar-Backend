@@ -49,10 +49,31 @@ public class DataService {
 		book4.setStockQuantity(10);
 		book4.setPrice(18.75f);
 
+		Book book5 = bookService.getBookByIsbn(9781612680194l);
+		book5.setStockQuantity(8);
+		book5.setPrice(12.0f);
+		
+		Book book6 = bookService.getBookByIsbn(9798887680026l);
+		book6.setStockQuantity(6);
+		book6.setPrice(22.0f);
+		
+		Book book7 = bookService.getBookByIsbn(9781649374172l);
+		book7.setStockQuantity(3);
+		book7.setPrice(25.0f);
+		
+		Book book8 = bookService.getBookByIsbn(9781668016138l);
+		book8.setStockQuantity(2);
+		book8.setPrice(15.0f);
+
 		bookRepository.save(book1);
 		bookRepository.save(book2);
 		bookRepository.save(book3);
 		bookRepository.save(book4);
+		bookRepository.save(book5);
+		bookRepository.save(book6);
+		bookRepository.save(book7);
+		bookRepository.save(book8);
+
 
 		// -------------------- User Address ----------------------------
 
